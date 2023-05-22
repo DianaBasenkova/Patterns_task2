@@ -1,809 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.testmode.test.LoginUserTest" tests="5" skipped="0" failures="5" errors="0" timestamp="2023-05-22T19:02:05" hostname="WIN-Q0UB77QSO5P" time="6.698">
+<testsuite name="ru.netology.testmode.test.LoginUserTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-05-22T19:13:25" hostname="WIN-Q0UB77QSO5P" time="8.033">
   <properties/>
-  <testcase name="Should get error message if login with not registered user" classname="ru.netology.testmode.test.LoginUserTest" time="3.934">
-    <failure message="org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:61446/devtools/browser/90fbfca7-e123-46b2-beb4-d4f768230024&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'WIN-Q0UB77QSO5P', ip: '192.168.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'&#10;Driver info: driver.version: SelenideDriver&#10;selenide.url: http://localhost:9999&#10;selenide.baseUrl: http://localhost:8080" type="org.openqa.selenium.remote.http.ConnectionFailedException">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:61446/devtools/browser/90fbfca7-e123-46b2-beb4-d4f768230024
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'WIN-Q0UB77QSO5P', ip: '192.168.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
-Driver info: driver.version: SelenideDriver
-selenide.url: http://localhost:9999
-selenide.baseUrl: http://localhost:8080
-	at app//org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:104)
-	at app//org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
-	at app//org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)
-	at app//org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
-	at app//org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
-	at java.base@11.0.17/java.util.Optional.map(Optional.java:265)
-	at app//org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:122)
-	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
-	at app//com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:42)
-	at app//com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:108)
-	at app//com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:69)
-	at app//com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:78)
-	at app//com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:170)
-	at app//com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:156)
-	at app//com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:130)
-	at app//com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
-	at app//com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:206)
-	at app//com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:68)
-	at app//com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:152)
-	at app//com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:66)
-	at app//com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:30)
-	at app//com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:101)
-	at app//com.codeborne.selenide.Selenide.open(Selenide.java:51)
-	at app//ru.netology.testmode.test.LoginUserTest.setup(LoginUserTest.java:17)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:126)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeEachMethod(TimeoutExtension.java:76)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:506)
-	at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$21(ClassBasedTestDescriptor.java:491)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachMethods$3(TestMethodTestDescriptor.java:171)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:199)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:199)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:168)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
-  <testcase name="Should get error message if login with blocked registered user" classname="ru.netology.testmode.test.LoginUserTest" time="0.673">
-    <failure message="org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:61459/devtools/browser/21870375-5454-46e5-93a8-535554cdaed8&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'WIN-Q0UB77QSO5P', ip: '192.168.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'&#10;Driver info: driver.version: SelenideDriver&#10;selenide.url: http://localhost:9999&#10;selenide.baseUrl: http://localhost:8080" type="org.openqa.selenium.remote.http.ConnectionFailedException">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:61459/devtools/browser/21870375-5454-46e5-93a8-535554cdaed8
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'WIN-Q0UB77QSO5P', ip: '192.168.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
-Driver info: driver.version: SelenideDriver
-selenide.url: http://localhost:9999
-selenide.baseUrl: http://localhost:8080
-	at app//org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:104)
-	at app//org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
-	at app//org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)
-	at app//org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
-	at app//org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
-	at java.base@11.0.17/java.util.Optional.map(Optional.java:265)
-	at app//org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:122)
-	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
-	at app//com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:42)
-	at app//com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:108)
-	at app//com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:69)
-	at app//com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:78)
-	at app//com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:170)
-	at app//com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:156)
-	at app//com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:130)
-	at app//com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
-	at app//com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:206)
-	at app//com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:68)
-	at app//com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:152)
-	at app//com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:66)
-	at app//com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:30)
-	at app//com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:101)
-	at app//com.codeborne.selenide.Selenide.open(Selenide.java:51)
-	at app//ru.netology.testmode.test.LoginUserTest.setup(LoginUserTest.java:17)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:126)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeEachMethod(TimeoutExtension.java:76)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:506)
-	at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$21(ClassBasedTestDescriptor.java:491)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachMethods$3(TestMethodTestDescriptor.java:171)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:199)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:199)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:168)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
-  <testcase name="Should successfully login with active registered user" classname="ru.netology.testmode.test.LoginUserTest" time="0.673">
-    <failure message="org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:61472/devtools/browser/26e46c1a-1aec-4c9f-b5df-738e6531e44c&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'WIN-Q0UB77QSO5P', ip: '192.168.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'&#10;Driver info: driver.version: SelenideDriver&#10;selenide.url: http://localhost:9999&#10;selenide.baseUrl: http://localhost:8080" type="org.openqa.selenium.remote.http.ConnectionFailedException">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:61472/devtools/browser/26e46c1a-1aec-4c9f-b5df-738e6531e44c
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'WIN-Q0UB77QSO5P', ip: '192.168.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
-Driver info: driver.version: SelenideDriver
-selenide.url: http://localhost:9999
-selenide.baseUrl: http://localhost:8080
-	at app//org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:104)
-	at app//org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
-	at app//org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)
-	at app//org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
-	at app//org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
-	at java.base@11.0.17/java.util.Optional.map(Optional.java:265)
-	at app//org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:122)
-	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
-	at app//com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:42)
-	at app//com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:108)
-	at app//com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:69)
-	at app//com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:78)
-	at app//com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:170)
-	at app//com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:156)
-	at app//com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:130)
-	at app//com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
-	at app//com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:206)
-	at app//com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:68)
-	at app//com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:152)
-	at app//com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:66)
-	at app//com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:30)
-	at app//com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:101)
-	at app//com.codeborne.selenide.Selenide.open(Selenide.java:51)
-	at app//ru.netology.testmode.test.LoginUserTest.setup(LoginUserTest.java:17)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:126)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeEachMethod(TimeoutExtension.java:76)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:506)
-	at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$21(ClassBasedTestDescriptor.java:491)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachMethods$3(TestMethodTestDescriptor.java:171)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:199)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:199)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:168)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
-  <testcase name="Should get error message if login with wrong password" classname="ru.netology.testmode.test.LoginUserTest" time="0.658">
-    <failure message="org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:61485/devtools/browser/1c1cd8c3-9ea2-482b-9c3d-e9c65a36fe2b&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'WIN-Q0UB77QSO5P', ip: '192.168.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'&#10;Driver info: driver.version: SelenideDriver&#10;selenide.url: http://localhost:9999&#10;selenide.baseUrl: http://localhost:8080" type="org.openqa.selenium.remote.http.ConnectionFailedException">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:61485/devtools/browser/1c1cd8c3-9ea2-482b-9c3d-e9c65a36fe2b
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'WIN-Q0UB77QSO5P', ip: '192.168.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
-Driver info: driver.version: SelenideDriver
-selenide.url: http://localhost:9999
-selenide.baseUrl: http://localhost:8080
-	at app//org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:104)
-	at app//org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
-	at app//org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)
-	at app//org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
-	at app//org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
-	at java.base@11.0.17/java.util.Optional.map(Optional.java:265)
-	at app//org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:122)
-	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
-	at app//com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:42)
-	at app//com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:108)
-	at app//com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:69)
-	at app//com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:78)
-	at app//com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:170)
-	at app//com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:156)
-	at app//com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:130)
-	at app//com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
-	at app//com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:206)
-	at app//com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:68)
-	at app//com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:152)
-	at app//com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:66)
-	at app//com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:30)
-	at app//com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:101)
-	at app//com.codeborne.selenide.Selenide.open(Selenide.java:51)
-	at app//ru.netology.testmode.test.LoginUserTest.setup(LoginUserTest.java:17)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:126)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeEachMethod(TimeoutExtension.java:76)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:506)
-	at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$21(ClassBasedTestDescriptor.java:491)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachMethods$3(TestMethodTestDescriptor.java:171)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:199)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:199)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:168)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
-  <testcase name="Should get error message if login with wrong login" classname="ru.netology.testmode.test.LoginUserTest" time="0.755">
-    <failure message="org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:61498/devtools/browser/8a2561ed-aeb5-4def-b5c3-e9394c93e32b&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'WIN-Q0UB77QSO5P', ip: '192.168.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'&#10;Driver info: driver.version: SelenideDriver&#10;selenide.url: http://localhost:9999&#10;selenide.baseUrl: http://localhost:8080" type="org.openqa.selenium.remote.http.ConnectionFailedException">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:61498/devtools/browser/8a2561ed-aeb5-4def-b5c3-e9394c93e32b
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'WIN-Q0UB77QSO5P', ip: '192.168.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
-Driver info: driver.version: SelenideDriver
-selenide.url: http://localhost:9999
-selenide.baseUrl: http://localhost:8080
-	at app//org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:104)
-	at app//org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
-	at app//org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)
-	at app//org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
-	at app//org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
-	at java.base@11.0.17/java.util.Optional.map(Optional.java:265)
-	at app//org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:122)
-	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
-	at app//com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:42)
-	at app//com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:108)
-	at app//com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:69)
-	at app//com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:78)
-	at app//com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:170)
-	at app//com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:156)
-	at app//com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:130)
-	at app//com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
-	at app//com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:206)
-	at app//com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:68)
-	at app//com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:152)
-	at app//com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:66)
-	at app//com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:30)
-	at app//com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:101)
-	at app//com.codeborne.selenide.Selenide.open(Selenide.java:51)
-	at app//ru.netology.testmode.test.LoginUserTest.setup(LoginUserTest.java:17)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:126)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeEachMethod(TimeoutExtension.java:76)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:506)
-	at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$21(ClassBasedTestDescriptor.java:491)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachMethods$3(TestMethodTestDescriptor.java:171)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:199)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:199)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:168)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="Should get error message if login with not registered user" classname="ru.netology.testmode.test.LoginUserTest" time="4.644"/>
+  <testcase name="Should get error message if login with blocked registered user" classname="ru.netology.testmode.test.LoginUserTest" time="1.541"/>
+  <testcase name="Should successfully login with active registered user" classname="ru.netology.testmode.test.LoginUserTest" time="0.392"/>
+  <testcase name="Should get error message if login with wrong password" classname="ru.netology.testmode.test.LoginUserTest" time="0.744"/>
+  <testcase name="Should get error message if login with wrong login" classname="ru.netology.testmode.test.LoginUserTest" time="0.708"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:9999/api/system/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "karrie.tromp",
+    "password": "zaad5seoqd7",
+    "status": "blocked"
+}
+Request method:	POST
+Request URI:	http://localhost:9999/api/system/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "lino.sipes",
+    "password": "qlm60gamvahlj",
+    "status": "active"
+}
+Request method:	POST
+Request URI:	http://localhost:9999/api/system/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "tiana.stroman",
+    "password": "pffe2myq",
+    "status": "active"
+}
+Request method:	POST
+Request URI:	http://localhost:9999/api/system/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "felicita.hahn",
+    "password": "o5mk7fm0zvkho",
+    "status": "active"
+}
+]]></system-out>
   <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 53241
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 5069
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-мая 22, 2023 10:02:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-мая 22, 2023 10:02:09 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:311)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:432)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-
-Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 49609
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-мая 22, 2023 10:02:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-мая 22, 2023 10:02:09 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:311)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:432)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-
-Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 64783
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-мая 22, 2023 10:02:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-мая 22, 2023 10:02:10 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:311)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:432)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-
-Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 62474
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-мая 22, 2023 10:02:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-мая 22, 2023 10:02:11 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:311)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:432)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-
-Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 58463
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-мая 22, 2023 10:02:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-мая 22, 2023 10:02:11 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:311)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:432)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-
+мая 22, 2023 10:13:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 113, so returning the closest version found: 111
 ]]></system-err>
 </testsuite>

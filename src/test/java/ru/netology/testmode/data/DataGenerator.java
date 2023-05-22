@@ -30,7 +30,7 @@ public class DataGenerator {
     {
         given()
                 .spec(requestSpec) // указываем, какую спецификацию используем
-                .body(new RegistrationDto(getRandomLogin(),getRandomPassword() , "active")) // передаём в теле объект, который будет преобразован в JSON
+                .body(user) // передаём в теле объект, который будет преобразован в JSON
                 .when() // "когда"
                 .post("/api/system/users") // на какой путь относительно BaseUri отправляем запрос
                 .then()
@@ -52,7 +52,7 @@ public class DataGenerator {
         }
 
         public static RegistrationDto getUser(String status) {
-            var user = new RegistrationDto(getRandomLogin(),getRandomPassword(), status);
+            var user = new RegistrationDto(getRandomLogin(), getRandomPassword(), status);
             return user;
         }
 
