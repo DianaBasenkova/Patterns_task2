@@ -13,6 +13,8 @@ compileTestJava.options.encoding = "UTF-8"
 
 repositories {
     mavenCentral()
+    google()
+    jcenter()
 }
 
 dependencies {

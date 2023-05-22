@@ -4,13 +4,11 @@ stack: jdk 11  # версия JDK
 
 branches:
   only:
-    - master  # ветка git
+    - main # ветка git
 
 build: off  # для использования своего скрипта сборки
 
 install:
-  # запуск SUT (& означает, что в фоновом режиме - не блокируется терминал для запуска тестов)
-  # параметр -P:profile=test активирует тестоввй режим при запуске SUT
   - java -jar ./artifacts/app-ibank.jar -P:profile=test &
 
 build_script:
